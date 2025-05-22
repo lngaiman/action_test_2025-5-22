@@ -2,9 +2,12 @@ on: push
 
 jobs:
   job1:
+    runs-on: ubuntu-latest\
     steps:
       - run: pwd
       - run: ls
+      - run: cat /etc/os-release
   job2:
+    runs-on: windows-latest
     steps:
       - run: node --version
